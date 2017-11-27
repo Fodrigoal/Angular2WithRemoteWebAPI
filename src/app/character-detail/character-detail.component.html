@@ -1,0 +1,18 @@
+<div *ngIf="character">
+  <p>Person ID: {{character.id}}</p>
+  <p>First Name: {{character.FirstName}}</p>
+  <p>Last Name: {{character.LastName}}</p>
+  <p>Occupation: {{character.Occupation}}</p>
+  <p>Gender: {{character.Gender}}</p>  
+  <p>Picture: <img src="{{character.Picture}}" alt="{{character.Name}}"/></p>
+  <div>
+    <p><label>First Name: </label><input [(ngModel)]="character.FirstName" placeholder="FirstName"></p>
+    <p><label>LastName: </label><input [(ngModel)]="character.LastName" placeholder="LastName"></p>
+    <p><label>Occupation: </label><input [(ngModel)]="character.Occupation" placeholder="Occupation"></p>
+    <p><label>Gender: </label><input [(ngModel)]="character.Gender" placeholder="Gender"></p>
+    <p><label>Picture: </label><input [(ngModel)]="character.Picture" placeholder="Picture"></p>
+  </div>
+  <button (click)="goBack()">Back</button>  
+  &nbsp;&nbsp;&nbsp;&nbsp;<button (click)="save()">Save</button> 
+
+</div>

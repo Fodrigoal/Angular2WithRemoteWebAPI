@@ -1,0 +1,4 @@
+<h3>Some Dragon Ball characters</h3>
+<a *ngFor="let c of characters"  [routerLink]="['/detail', c.id]"  class="col-1-4">
+  <p>{{c.FirstName}} {{c.LastName}}</p>
+</a>
